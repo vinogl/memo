@@ -1,0 +1,102 @@
+{
+  "main": {
+    "id": "02a2aa65dce8bd1a",
+    "type": "split",
+    "children": [
+      {
+        "id": "b85512afc137a653",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "cv.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1b60c4b24716cca0",
+    "type": "split",
+    "children": [
+      {
+        "id": "65e7ba80e0681366",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d1279de18234d31b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "abd39cb3e961b034",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 265.5
+  },
+  "right": {
+    "id": "c1757f3a45fcaa1e",
+    "type": "split",
+    "children": [
+      {
+        "id": "2ee7e318a1f1af0c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e6e61a35fb726ac5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "cv.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "b85512afc137a653",
+  "lastOpenFiles": [
+    "cv.md",
+    "family_net.md",
+    "git.md",
+    "Password_memo.md",
+    "kali_linux_init.md",
+    "zabbix.md",
+    "Database.md",
+    "菜单.md",
+    "commands_memo.md",
+    "DNS_spoof.md"
+  ]
+}
