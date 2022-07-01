@@ -40,3 +40,17 @@
 	```
 
 	* 查看`192.168.2.1:2048`
+
+### 折腾`Google TV`
+
+* `Google Tv`初始化连不上wifi
+
+```
+进入OpenWrt后台 -> 网络 -> DHCP/DNS -> 自定义挟持域名
+
+	time.android.com - 203.107.6.88
+```
+
+* wifi网络受限: 修改`ntp_server`([视频参考](https://www.youtube.com/watch?v=G6aJGeeB30k))
+
+	
