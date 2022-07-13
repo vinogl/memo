@@ -27,17 +27,17 @@
 
 	* 将`html`上传系统并改名
 		
-	```
-	~$ scp /CV/CV.html root@192.168.2.1:/root/dist
-	~$ mv /root/dist/CV.html /root/dist/index.html 
-	```
+		```
+		~$ scp /CV/CV.html root@192.168.2.1:/root/dist
+		~$ mv /root/dist/CV.html /root/dist/index.html 
+		```
 
 	* `docker`-`nginx`部署静态网页
 
-	```
-	~$ docker pull ngnix  # 第一次先下载ngnix镜像
-	~$ docker run -d -p 2048:80 -v /root/dist:/usr/share/nginx/html nginx 
-	```
+		```
+		~$ docker pull ngnix  # 第一次先下载ngnix镜像
+		~$ docker run -d -p 2048:80 -v /root/dist:/usr/share/nginx/html nginx 
+		```
 
 	* 查看`192.168.2.1:2048`
 
@@ -45,11 +45,11 @@
 
 * `Google Tv`初始化连不上wifi
 
-```
-进入OpenWrt后台 -> 网络 -> DHCP/DNS -> 自定义挟持域名
+	```
+	进入OpenWrt后台 -> 网络 -> DHCP/DNS -> 自定义挟持域名
 
-	time.android.com - 203.107.6.88
-```
+		time.android.com - 203.107.6.88
+	```
 
 * wifi网络受限: 修改`ntp_server`([视频参考](https://www.youtube.com/watch?v=G6aJGeeB30k))
 

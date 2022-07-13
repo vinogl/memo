@@ -78,34 +78,35 @@
 
 * `config`命令
 
-```
-~$ git config <key> --list(or -l)        # 列出所有 Git 能找到的配置
-~$ git config <key> user.name "Gong Li"  # 设置变量
-~$ git config <key> --unset user.name    # 取消变量
-```
+	```
+	~$ git config <key> --list(or -l)        # 列出所有 Git 能找到的配置
+	~$ git config <key> user.name "Gong Li"  # 设置变量
+	~$ git config <key> --unset user.name    # 取消变量
+	```
 
 ### `Macbook`上`.DS_Store`隐藏文件
 
 * 可直接删除某文件夹内的所有`.DS_Store`
 	
-```
-~$ find ./ -name .DS_Store | xargs rm -rf
-```
+	```
+	~$ find ./ -name .DS_Store | xargs rm -rf
+	```
 
 * `Macbook`配置忽略`.DS_Store`
 
 	1. 创建`~/.gitignore_global`文件，把需要全局忽略的文件写入该文件
 
-	```
-	~$ vim ~/.gitignore_global
+		```
+		~$ vim ~/.gitignore_global
 
-		写入:
-		.DS_Store
-		 */.DS_Store
-	```
+			写入:
+			.DS_Store
+			*/.DS_Store
+		```
 
 	2. 在`~/.gitconfig`中引入`.gitignore_global`文件，手动写入`~/.gitconfig`，或输入如下代码
-	```
-	~$ git config --global core.excludesfile /Users/GongLi/.gitignore_global
-	```	
+	
+		```
+		~$ git config --global core.excludesfile /Users/GongLi/.gitignore_global
+		```	
 

@@ -25,7 +25,7 @@
 
 |标识|二级域名|ip|登录用户|密码or密钥|
 |:--:|:--:|:--:|:--:|:--:|
-|`kk163-1`|`koreaone`|`152.69.234.32`|`root`|`~/.ssh/kk163-1.key`|
+|`kk163-1`|`koreaone`|`	129.154.57.226`|`root`|`~/.ssh/kk163-1.key`|
 |`kk163-2`|`koreatwo`|`146.56.97.75`|`root`|`~/.ssh/kk163-2.key`|
 
 ### Xray-ui界面
@@ -50,7 +50,7 @@
 	
 	|域名|ip|
 	|:--:|:--:|
-	|`koreaone.meta99.ga`|`152.69.234.32`|
+	|`koreaone.meta99.ga`|`	129.154.57.226`|
 	|`koreatwo.meta99.ga`|`146.56.97.75`|
 
 * [namesilo](https://www.namesilo.com):
@@ -123,6 +123,7 @@
 	~$ apt install -y curl
 	~$ apt install -y socat
 	```
+
 	```
 	~$ curl https://get.acme.sh | sh
 	~$ ~/.acme.sh/acme.sh --register-account -m <邮箱>
@@ -131,6 +132,7 @@
 
 	~$ ~/.acme.sh/acme.sh --installcert -d <域名> --key-file /root/private.key --fullchain-file /root/cert.crt
 	```
+
 	> 完成后，root目录下看到证书公钥/root/cert.crt及密钥文件/root/private.key
 
 * 安装、配置X-ui面板:

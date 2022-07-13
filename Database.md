@@ -8,16 +8,16 @@
 
 	* 连接远程数据库
 
-	```
-	~$ mysql -h <host> -P <port> -u <user> -p <password> 
-	```
+		```
+		~$ mysql -h <host> -P <port> -u <user> -p <password> 
+		```
 
 	* 连接本地的数据库
 
-	```
-	~$ mysql -uroot -p
-	   password: vino@111
-	```
+		```
+		~$ mysql -uroot -p
+	 	  password: vino@111
+		```
 
 - - -
 
@@ -37,9 +37,9 @@
 
 * 创建用户并授权:
 
-	`> sqlplus / as sysdba`
-
 	```
+	> sqlplus / as sysdba
+
 	SQL> create user gongli identified by 111;
 	SQL> grant create session to gongli;
 	SQL> grant dba to gongli;
@@ -49,7 +49,9 @@
 
 * 导入数据(在DOS中输入，而不是SQL): 
 	
-	`> imp gongli/111@orcl full=y file='data.dmp' ignore=y;`
+	```
+	> imp gongli/111@orcl full=y file='data.dmp' ignore=y;
+	```
 
 * 最后还需配置一下1521端口的防火墙！
 
