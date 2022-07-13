@@ -1,7 +1,5 @@
 ## 服务器
 
-- - -
-
 ### 平台
 
 * [kamatera](https://console.kamatera.com/)
@@ -25,8 +23,8 @@
 
 |标识|二级域名|ip|登录用户|密码or密钥|
 |:--:|:--:|:--:|:--:|:--:|
-|`kk163-1`|`koreaone`|`	129.154.57.226`|`root`|`~/.ssh/kk163-1.key`|
-|`kk163-2`|`koreatwo`|`146.56.97.75`|`root`|`~/.ssh/kk163-2.key`|
+|`kk163-1`|`koreaone`|`146.56.103.18`|`root`|`~/.ssh/kk163-1.key`|
+|`kk163-2`|`koreatwo`|`150.230.250.160`|`root`|`~/.ssh/kk163-2.key`|
 
 ### Xray-ui界面
 
@@ -50,8 +48,8 @@
 	
 	|域名|ip|
 	|:--:|:--:|
-	|`koreaone.meta99.ga`|`	129.154.57.226`|
-	|`koreatwo.meta99.ga`|`146.56.97.75`|
+	|`koreaone.meta99.ga`|`146.56.103.18`|
+	|`koreatwo.meta99.ga`|`150.230.250.160`|
 
 * [namesilo](https://www.namesilo.com):
 	
@@ -66,12 +64,6 @@
 - - -
 
 ## 服务器配置安装的server
-
-### 流媒体解锁检测
-
-```
-~$ bash <(curl -sL https://git.huaweicdn.net/media_unlock_check.sh)
-```
 
 ### 初始化操作([参考](https://github.com/bigdongdongCLUB/GoodGoodStudyDayDayUp/issues/7))
 
@@ -112,7 +104,19 @@
 	```
 	> 打完最后一步，应看到 20480 或 16384 说明BBR开启成功
 
-- - -
+### 流媒体解锁
+
+* Netflix解锁
+
+	* [Github脚本](https://github.com/fscarmen/warp)
+
+	* [视频参考](https://www.youtube.com/watch?v=5DedN1O_f2E&t=71s)
+
+* 流媒体解锁检测
+
+	```
+	~$ bash <(curl -sL https://git.huaweicdn.net/media_unlock_check.sh)
+	```
 
 ### 在服务器上配置Xray-ui界面([参考](https://github.com/bigdongdongCLUB/GoodGoodStudyDayDayUp/issues/8))
 
@@ -157,32 +161,4 @@
 	点击'重启面板'
 	```
 
-- - -
-
-### 订阅转换服务的搭建([参考](https://codeswift.top/posts/docker-subscription-converter/))
-
-* docker安装subconverter:
-
-	```
-	~$ sudo docker run -d --restart=always --name subconverter -p 25500:25500 tindy2013/subconverter:latest
-
-	~$ curl http://localhost:25500/version  # 验证安装是否成功
-	```
-
-* docker搭建前端sub-web:
-
-	* 复制项目到本地，并修改后端地址
-
-		```
-		~$ git clone https://github.com/CareyWang/sub-web.git
-		~$ cd sub-web
-		~$ vim .env  # 修改API后端
-		```
-
-	* 在项目主目录下，构建并运行该项目:
-
-		```
-		~$ sudo docker build -t subweb-local:latest .
-		~$ sudo docker run -d -p 58080:80 --restart always --name subweb subweb-local:latest
-		```
-		> 上述 docker run 命令将容器的 80 端口映射到了主机的 58080 端口。
+### 订阅转换服务的搭建(见`Docker.md`)

@@ -45,10 +45,14 @@
 
 * `nslookup`: 查看dns缓存
 
-	[Mac清空DNS缓存](https://chinese.freecodecamp.org/news/how-to-flush-dns-on-mac-macos-clear-dns-cache/)
-
 	```
 	~$ nslookup <domain> [dns-server]
+	```
+
+* [Mac清空DNS缓存](https://chinese.freecodecamp.org/news/how-to-flush-dns-on-mac-macos-clear-dns-cache/)
+
+	```
+	~$ sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
 	```
 
 * [`redir`](https://github.com/troglobit/redir)(系统默认不带)
@@ -68,37 +72,6 @@
 * operation: `start|stop|reload|force-reload|restart|try-restart|status`
 
 * server: `networking | ssh | apache2 | firewalld.service｜ ...`
-
-## Docker
-
-* [安装docker引擎](https://docs.docker.com/engine/install/)
-
-* `docker`常用命令
-
-	```
-	~$ docker ps  # 查看所有容器
-	~$ docker rm -f <容器id(不用输全)>  # 删除容器
-	~$ docker exec -it <容器id(不用输全)> bash  # 进入容器内部
-	~$ exit  #  退出容器
-	```
-
-* [订阅转换服务的搭建](https://codeswift.top/posts/docker-subscription-converter/)(`Server.md`中有记录)
-
-* 使用`ngnix`部署静态网页
-
-	```
-	~$ docker pull ngnix  # 第一次先下载ngnix镜像
-	~$ docker run -d -p 80:80 -v /dist:/usr/share/nginx/html nginx  # 将/dist指定为外部文件
-	```
-
->`/usr/share/nginx/html`为容器内部`html`所在地址 <br />
-> 将`html`文件放到`/dist`下，并命名为`index.html`
->
-> 若不命名为`index.html`
->
-> 进入容器 <br />
-> `/etc/nginx/nginx.conf`为配置文件地址 <br /> 
-> 修改`/etc/nginx/conf.d`中的`default.conf`
 
 ## conda常用命令
 

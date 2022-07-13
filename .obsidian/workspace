@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "暑假计划.md",
-            "mode": "preview"
+            "file": "Server.md",
+            "mode": "source"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "暑假计划.md",
+                "file": "Server.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +88,7 @@
   },
   "active": "b85512afc137a653",
   "lastOpenFiles": [
+    "Server.md",
     "暑假计划.md",
     "cv.md",
     "family_net.md",
@@ -96,7 +97,6 @@
     "kali_linux_init.md",
     "zabbix.md",
     "Database.md",
-    "菜单.md",
-    "commands_memo.md"
+    "菜单.md"
   ]
 }
