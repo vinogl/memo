@@ -23,7 +23,7 @@
 
 |标识|二级域名|ip|登录用户|密码or密钥|
 |:--:|:--:|:--:|:--:|:--:|
-|`kk163-1`|`koreaone`|`146.56.103.18`|`root`|`~/.ssh/kk163-1.key`|
+|`kk163-1`|`koreaone`|`152.67.199.163`|`root`|`~/.ssh/kk163-1.key`|
 |`kk163-2`|`koreatwo`|`150.230.250.160`|`root`|`~/.ssh/kk163-2.key`|
 
 ### Xray-ui界面
@@ -48,7 +48,7 @@
 	
 	|域名|ip|
 	|:--:|:--:|
-	|`koreaone.meta99.ga`|`146.56.103.18`|
+	|`koreaone.meta99.ga`|`152.67.199.163`|
 	|`koreatwo.meta99.ga`|`150.230.250.160`|
 
 * [namesilo](https://www.namesilo.com):
@@ -71,14 +71,14 @@
 
 	```
 	~$ sudo su
-
+	
 	~$ vim /root/.ssh/authorized_keys
 		把ssh-rsa之前的文件都删除掉(不删除‘ssh-rsa’)
-
+	
 	~$ vim /etc/ssh/sshd_config
 		找到 PermitRootLogin
 		添加 PermitRootLogin yes
-
+	
 	~$ reboot
 	```
 
@@ -90,7 +90,7 @@
 	~$ iptables -P OUTPUT ACCEPT
 	~$ iptables -F
 	~$ apt-get purge netfilter-persistent
-
+	
 	~$ reboot
 	```
 
@@ -131,9 +131,9 @@
 	```
 	~$ curl https://get.acme.sh | sh
 	~$ ~/.acme.sh/acme.sh --register-account -m <邮箱>
-
+	
 	~$ ~/.acme.sh/acme.sh --issue -d <域名> --standalone
-
+	
 	~$ ~/.acme.sh/acme.sh --installcert -d <域名> --key-file /root/private.key --fullchain-file /root/cert.crt
 	```
 

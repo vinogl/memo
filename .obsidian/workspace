@@ -10,7 +10,8 @@
           "type": "markdown",
           "state": {
             "file": "Server.md",
-            "mode": "source"
+            "mode": "preview",
+            "source": false
           }
         }
       }
@@ -52,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 265.5
+    "width": 238
   },
   "right": {
     "id": "c1757f3a45fcaa1e",
