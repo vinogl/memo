@@ -63,6 +63,7 @@
 	获取的域名: `vpserver.xyz`
 	
 - - -
+- - -
 
 ## 服务器配置安装的server
 
@@ -109,7 +110,12 @@
 
 * Netflix解锁
 
-	* [Github脚本](https://github.com/fscarmen/warp)
+	* warp([github](https://github.com/fscarmen/warp))
+
+		```
+		~$ wget -N https://raw.githubusercontent.com/fscarmen/warp/main/menu.sh
+		~$ bash menu.sh
+		```
 
 	* [视频参考](https://www.youtube.com/watch?v=5DedN1O_f2E&t=71s)
 
@@ -122,7 +128,7 @@
 ### 快速搭建Xray
 
 ```
-~$ wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/paniy/Xray_bash_onekey/main/install.sh" 
+~$ wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/paniy/Xray_bash_onekey/main/install.sh"
 ~$ chmod +x install.sh
 ~$ bash install.sh
 ```
