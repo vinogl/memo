@@ -19,19 +19,20 @@
 	|`k5767`|`35767988@qq.com`|`Vps@3576`|Singapore|
 	|`m3420602`|`33420602@qq.com`|`Vps@3342`|Sydney|
 
+* [AWS](https://aws.amazon.com)
+
+	* 用户名: `vino`
+
+	* 账号: `gongli.vino@gmail.com`
+
+	* 密码: `Gl@907104235`
+
 ### 服务器信息
 
-|标识|二级域名|ip|登录用户|密码or密钥|
+|标识|ip|登录用户|密码or密钥|Xray界面url|
 |:--:|:--:|:--:|:--:|:--:|
-|`kk163-1`|`koreaone`|`152.67.199.163`|`root`|`~/.ssh/kk163-1.key`|
-|`kk163-2`|`koreatwo`|`150.230.250.160`|`root`|`~/.ssh/kk163-2.key`|
-
-### Xray-ui界面
-
-|所属服务器|地址|
-|:--:|:--:|
-|`kk163-1`|`koreaone.meta99.ga:2048`|
-|`kk163-2`|`koreatwo.meta99.ga:2048`|
+|`kk163-1`|`152.67.199.163`|`root`|`~/.ssh/kk163-1.key`|`koreaone.meta99.ga:2048`|
+|`kk163-2`|`150.230.250.160`|`root`|`~/.ssh/kk163-2.key`|`koreatwo.meta99.ga:2048`|
 
 - - -
 
@@ -118,7 +119,15 @@
 	~$ bash <(curl -sL https://git.huaweicdn.net/media_unlock_check.sh)
 	```
 
-### 在服务器上配置Xray-ui界面([参考](https://github.com/bigdongdongCLUB/GoodGoodStudyDayDayUp/issues/8))
+### 快速搭建Xray
+
+```
+~$ wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/paniy/Xray_bash_onekey/main/install.sh" 
+~$ chmod +x install.sh
+~$ bash install.sh
+```
+
+### 配置Xray-ui界面([参考](https://github.com/bigdongdongCLUB/GoodGoodStudyDayDayUp/issues/8))
 
 * 申请SSL证书:
  
