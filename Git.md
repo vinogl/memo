@@ -74,7 +74,7 @@
 |:--:|:--:|:--:|
 |仓库级别|`--local`|`当前仓库/.git/config`|
 |用户级别|`--global`|`~/.gitconfig`|
-|系统级别|`--system`|`/etc/gitconfig`<br />(macbook上没找到)|
+|系统级别|`--system`|`/etc/gitconfig`<br>(macbook上没找到)|
 
 * `config`命令
 

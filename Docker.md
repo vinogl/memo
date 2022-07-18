@@ -47,12 +47,12 @@
 ~$ docker run -d -p 80:80 -v /dist:/usr/share/nginx/html nginx  # 将/dist指定为外部文件
 ```
 
->`/usr/share/nginx/html`为容器内部`html`所在地址 <br />
+>`/usr/share/nginx/html`为容器内部`html`所在地址 <br>
 > 将`html`文件放到`/dist`下，并命名为`index.html`
 >
 > 若不命名为`index.html`
 >
-> 进入容器 <br />
-> `/etc/nginx/nginx.conf`为配置文件地址 <br /> 
+> 进入容器 <br>
+> `/etc/nginx/nginx.conf`为配置文件地址 <br> 
 > 修改`/etc/nginx/conf.d`中的`default.conf`
 
