@@ -33,6 +33,7 @@
 |:--:|:--:|:--:|:--:|:--:|
 |`kk163-1`|`152.67.199.163`|`root`|`~/.ssh/kk163-1.key`|`koreaone.meta99.ga:2048`|
 |`kk163-2`|`150.230.250.160`|`root`|`~/.ssh/kk163-2.key`|`koreatwo.meta99.ga:2048`|
+|`aws-US-CA`|`54.193.65.171`|`root`|`~/.ssh/aws-us-ca.pem`|`usca.meta99.ga:2048`|
 
 - - -
 
@@ -51,6 +52,7 @@
 	|:--:|:--:|
 	|`koreaone.meta99.ga`|`152.67.199.163`|
 	|`koreatwo.meta99.ga`|`150.230.250.160`|
+	|`usca.meta99.ga`|`54.193.65.171`|
 
 * [namesilo](https://www.namesilo.com):
 	
@@ -125,14 +127,6 @@
 	~$ bash <(curl -sL https://git.huaweicdn.net/media_unlock_check.sh)
 	```
 
-### 快速搭建Xray
-
-```
-~$ wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/paniy/Xray_bash_onekey/main/install.sh"
-~$ chmod +x install.sh
-~$ bash install.sh
-```
-
 ### 配置Xray-ui界面([参考](https://github.com/bigdongdongCLUB/GoodGoodStudyDayDayUp/issues/8))
 
 * 申请SSL证书:
@@ -146,9 +140,7 @@
 	```
 	~$ curl https://get.acme.sh | sh
 	~$ ~/.acme.sh/acme.sh --register-account -m <邮箱>
-	
 	~$ ~/.acme.sh/acme.sh --issue -d <域名> --standalone
-	
 	~$ ~/.acme.sh/acme.sh --installcert -d <域名> --key-file /root/private.key --fullchain-file /root/cert.crt
 	```
 
