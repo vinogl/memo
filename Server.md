@@ -33,7 +33,7 @@
 |:--:|:--:|:--:|:--:|:--:|
 |`kk163-1`|`152.67.199.163`|`root`|`~/.ssh/kk163-1.key`|`koreaone.meta99.ga:2048`|
 |`kk163-2`|`150.230.250.160`|`root`|`~/.ssh/kk163-2.key`|`koreatwo.meta99.ga:2048`|
-|`aws-US-CA`|`54.193.65.171`|`root`|`~/.ssh/aws-us-ca.pem`|`usca.meta99.ga:2048`|
+|`aws-US-CA`|`54.67.10.239`|`root`|`~/.ssh/aws-us-ca.pem`|`usca.meta99.ga:2048`|
 
 - - -
 
@@ -52,7 +52,7 @@
 	|:--:|:--:|
 	|`koreaone.meta99.ga`|`152.67.199.163`|
 	|`koreatwo.meta99.ga`|`150.230.250.160`|
-	|`usca.meta99.ga`|`54.193.65.171`|
+	|`usca.meta99.ga`|`54.67.10.239`|
 
 * [namesilo](https://www.namesilo.com):
 	
